@@ -1,3 +1,4 @@
+import React from 'react';
 import type { ReactNode } from 'react';
 import type { DutyType, IconName } from '../types';
 import { useStore } from '../store/useStore';
@@ -181,7 +182,7 @@ export function AwardIcon(props: SvgProps) {
   );
 }
 
-export const ICON_MAP: Record<IconName, (props: SvgProps) => JSX.Element> = {
+export const ICON_MAP: Record<IconName, (props: SvgProps) => React.ReactElement> = {
   sun:        SunIcon,
   moon:       MoonIcon,
   star:       StarIcon,
